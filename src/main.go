@@ -27,7 +27,8 @@ func main() {
 	//fenzhisuanfa.QuickSort(arr, 0, 18)
 	//fmt.Println(arr)
 
-	arr := []int64{1, 3, 99, 50, 25, 45, 33, 12, 2, 4, 5, 7, 1, 2, 3, 6, 10, 9, 5}
-	fmt.Println(fenzhisuanfa.FindTargetSortNumber(arr, 0, int64(len(arr)-1), 5))
+	arr := []int{4, 1, 3, 2, 16, 9, 10, 14, 8, 7}
+	fenzhisuanfa.BuildHeap(arr)
+	fmt.Println(arr)
 
 }
