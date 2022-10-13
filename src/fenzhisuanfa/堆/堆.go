@@ -17,11 +17,11 @@ eg:
 func BuildHeap(arr []int) {
 	heapSize := len(arr)
 	for i := heapSize / 2; i >= 0; i-- {
-		heapify(arr, i, heapSize)
+		Heapify(arr, i, heapSize)
 	}
 }
 
-func heapify(arr []int, i, heapSize int) {
+func Heapify(arr []int, i, heapSize int) {
 	l := left(i)
 	r := right(i)
 	var most int
@@ -38,7 +38,7 @@ func heapify(arr []int, i, heapSize int) {
 
 	if most != i {
 		arr[i], arr[most] = arr[most], arr[i]
-		heapify(arr, most, heapSize)
+		Heapify(arr, most, heapSize)
 	}
 }
 

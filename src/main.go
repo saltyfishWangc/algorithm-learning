@@ -1,7 +1,7 @@
 package main
 
 import (
-	"algorithm-learning/src/fenzhisuanfa"
+	"algorithm-learning/src/fenzhisuanfa/堆"
 	"fmt"
 )
 
@@ -28,7 +28,7 @@ func main() {
 	//fmt.Println(arr)
 
 	arr := []int{4, 1, 3, 2, 16, 9, 10, 14, 8, 7}
-	fenzhisuanfa.BuildHeap(arr)
+	fenzhisuanfa.HeapSort(arr)
 	fmt.Println(arr)
 
 }
